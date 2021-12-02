@@ -2049,9 +2049,11 @@ public class Main {
                 }else {
                     System.out.println(values + " (decreased)");
                     lower++;
+                    prevMeas = values;
                 }
             }
-            System.out.println("larger numbers: " + larger);
+            int result = larger - 1;
+            System.out.println("larger numbers: " + result);
             System.out.println("lower numbers: " + lower);
         }catch (Exception e){
             e.printStackTrace();
